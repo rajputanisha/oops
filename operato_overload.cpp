@@ -1,31 +1,77 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
-class Param{
-  public:
-  int val;
-  void operator+(Param obj2){
-    
-    int val1 = this->val;
-    int val2 = this->val;
-    cout<<(val2-val1)<<endl;
 
-  }
+class Param {
+public:
+    int val;
+
+    // Overloading the + operator
+    Param operator + (const Param& obj2) const {
+        // Create a new Param object to store the result
+        Param result;
+        // Compute the difference between the val members
+        result.val = this->val - obj2.val;
+        return result;
+    }
 };
-int main(){
-  Param p1;
-  Param p2;
-  p1.val = 3;
-  p2.val= 4;
-  //this should priit the diffence the between thwn
-  p1+p2;
 
+int main() {
+    Param p1, p2;
+    p1.val = 3;
+    p2.val = 4;
+    
+    // Use the overloaded + operator to get the difference
+    Param result = p1 + p2;
+    
+    // Print the result
+    cout << result.val << endl;
+
+    return 0;
 }
+//*
+
+// The p1 + p2 syntax is more intuitive and immediately conveys that you are performing an addition operation, similar to how you would with built-in types
+
+// uisng add(2) insed of operator overloading disadvnsatage 
+// #include <iostream>
+// using namespace std;
+
+// class Param {
+// public:
+//     int val;
+
+//     Param add(const Param& obj2) const {
+//         Param result;
+//         result.val = this->val + obj2.val;
+//         return result;
+//     }
+// };
+
+// int main() {
+//     Param p1, p2;
+//     p1.val = 3;
+//     p2.val = 4;
+
+//     // Use the add() method
+//     Param result = p1.add(p2);
+
+//     // Print the result
+//     cout << result.val << endl; // Outputs: 7
+
+//     return 0;
+// }
+
+
+// ***
+
+//  *//
 /**perator overloading in C++!
 
 Operator overloading is a feature in C++ that allows you to redefine the behavior of operators when working with user-defined data types, such as classes and structs. This allows you to create more intuitive and expressive code, making it easier to work with complex data structures.
 
 Here's a breakdown of operator overloading in C++:
-
+////EXAMPLE OF OPERTOR OVERLOADING IN CPP
+we can make use of the addition operator (+) for string class to concatenate two strings. We know that the task of this operator is to add two operands. So a single operator ‘+’, when placed between integer operands, adds them and when placed between string operands, concatenates them. 
 Why Operator Overloading?
 Imagine you have a class Complex that represents complex numbers. You want to be able to add, subtract, multiply, and divide complex numbers using the familiar +, -, *, and / operators. Without operator overloading, you would have to use member functions like add(), subtract(), multiply(), and divide(), which can be cumbersome and less readable.
 

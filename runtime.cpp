@@ -1,4 +1,6 @@
 //overriding in rutime 
+/*
+need of overrridng Overriding allows derived classes to provide their own specific implementation of a method that is defined in a base class. This is useful when different subclasses need to perform a similar action in a way that is specific to their type./*
 //inherit class containe some propertiees but i want ot change accoding to myself ..custom behavoir 
 //overriding is a process of changing the behaviour of the parent class in child class
 // for instance class contain speek and the child class has does not sppourt the peorperty speak they want ot add customly instrad of speak they eant bark memeber function .with help of function overrriding the y can change mannnula ..

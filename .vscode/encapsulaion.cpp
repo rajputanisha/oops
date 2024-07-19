@@ -1,7 +1,10 @@
 /*****
+ 
+ It contains the data whic is hidden and the hidden data can be restricted t othe members of that class.
  *Encapsulation is considered an attribute of the class in object-oriented programming (OOP) because it involves bundling the data (attributes) and the methods (functions or behaviors) that operate on the data into a single unit called a class. Here's why encapsulation is an essential characteristic of a class:
 
 Data Hiding: Encapsulation allows a class to hide its internal state and only expose a controlled interface to the outside world. This means that the internal representation of an object is hidden from the outside, and only the methods provided by the class are accessible. This helps in protecting the integrity of the data by preventing unauthorized or unintended access.
+**************** it provide )security concerns of the outside of the world******* security provide and maintain the intergrity of the data by preventing unauthorisied acees and intended access********8
 
 Control Over Data: By using encapsulation, a class can control how its data is accessed and modified. Typically, this is achieved by using access specifiers like private, protected, and public. Private data members and methods are accessible only within the class itself, while public members can be accessed from outside the class. This allows the class to enforce certain rules and validations when the data is accessed or modified.
 
