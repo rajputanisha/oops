@@ -1,6 +1,11 @@
 {
   "files.associations": {
     "new": "cpp",
-    "sstream": "cpp"
+    "sstream": "cpp",
+    "array": "cpp",
+    "deque": "cpp",
+    "string": "cpp",
+    "vector": "cpp",
+    "iterator": "cpp"
   }
 }

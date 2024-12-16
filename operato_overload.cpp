@@ -30,42 +30,42 @@ int main() {
 }
 //*
 
-// The p1 + p2 syntax is more intuitive and immediately conveys that you are performing an addition operation, similar to how you would with built-in types
+The p1 + p2 syntax is more intuitive and immediately conveys that you are performing an addition operation, similar to how you would with built-in types
 
-// uisng add(2) insed of operator overloading disadvnsatage 
-// #include <iostream>
-// using namespace std;
+uisng add(2) insed of operator overloading disadvnsatage 
+#include <iostream>
+using namespace std;
 
-// class Param {
-// public:
-//     int val;
+class Param {
+public:
+    int val;
 
-//     Param add(const Param& obj2) const {
-//         Param result;
-//         result.val = this->val + obj2.val;
-//         return result;
-//     }
-// };
+    Param add(const Param& obj2) const {
+        Param result;
+        result.val = this->val + obj2.val;
+        return result;
+    }
+};
 
-// int main() {
-//     Param p1, p2;
-//     p1.val = 3;
-//     p2.val = 4;
+int main() {
+    Param p1, p2;
+    p1.val = 3;
+    p2.val = 4;
 
 //     // Use the add() method
-//     Param result = p1.add(p2);
+     Param result = p1.add(p2);
 
 //     // Print the result
-//     cout << result.val << endl; // Outputs: 7
+     cout << result.val << endl; // Outputs: 7
 
-//     return 0;
-// }
+  return 0;
+ }
 
 
 // ***
 
 //  *//
-/**perator overloading in C++!
+perator overloading in C++!
 
 Operator overloading is a feature in C++ that allows you to redefine the behavior of operators when working with user-defined data types, such as classes and structs. This allows you to create more intuitive and expressive code, making it easier to work with complex data structures.
 
@@ -128,13 +128,13 @@ By following these guidelines and rules, you can effectively use operator overlo
 
 
 
-Answer with Web Search
-Continue
+// Answer with Web Search
+// Continue
 
-need of operator overloading
+// need of operator overloading
 
 
-Here are some reasons why operator overloading is necessary or beneficial in C++:
+// Here are some reasons why operator overloading is necessary or beneficial in C++:
 
 Improved Code Readability: Operator overloading allows you to write more expressive and readable code. For example, instead of writing a.add(b), you can write a + b, which is more intuitive and easier to understand.
 Increased Productivity: With operator overloading, you can focus on the logic of your program without worrying about the implementation details of operators. This can lead to increased productivity and faster development.
@@ -153,4 +153,4 @@ Date and Time Arithmetic: Operator overloading can be used to define how date an
 Fractional Arithmetic: Operator overloading can be used to define how fractional arithmetic operations such as addition, subtraction, and multiplication are performed.
 Bitwise Operations: Operator overloading can be used to define how bitwise operations such as AND, OR, and XOR are performed on custom types.
 Container Classes: Operator overloading can be used to define how container classes such as vectors, lists, and sets are manipulated and accessed.
-In summary, operator overloading is a powerful feature in C++ that allows you to create more expressive, flexible, and efficient code. It is particularly useful in scenarios where you need to define custom behavior for operators, such as matrix operations, complex numbers, string manipulation, and more. */
+ In summary, operator overloading is a powerful feature in C++ that allows you to create more expressive, flexible, and efficient code. It is particularly useful in scenarios where you need to define custom behavior for operators, such as matrix operations, complex numbers, string manipulation, and more. 

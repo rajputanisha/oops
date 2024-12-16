@@ -1,20 +1,36 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
-class Fruit{
-public:
-string name;
 
+// Base class 1
+class Base1 {
+public:
+    void method1() {
+        cout << "Base1 method1" << endl;
+    }
 };
-class Mango: public Fruit{
-   public:
-   int weight;
+
+// Base class 2
+class Base2 {
+public:
+    void method2() {
+        cout << "Base2 method2" << endl;
+    }
 };
-class Anana: public Mango{
- public:
- int sugarLevel;
+
+// Derived class inheriting from both Base1 and Base2
+class Derived : public Base1, public Base2 {
+public:
+    void method3() {
+        cout << "Derived method3" << endl;
+    }
 };
-int main(){
-  Anana a;
-  cout<<a.weight<<" "<<a.sugarLevel<<" "<<endl;
-  return  0;
+
+int main() {
+    Derived obj;
+    obj.method1();  // Output: Base1 method1
+    obj.method2();  // Output: Base2 method2
+    obj.method3();  // Output: Derived method3
+
+    return 0;
+    multileval inheritamnce
 }

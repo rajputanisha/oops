@@ -24,3 +24,38 @@ int main(){
   cout << "Phy: " << obj.phy << ", Chem: " << obj.chem << ", Maths: " << obj.maths << endl;
   return 0;
 }
+#include <iostream>
+using namespace std;
+
+// Grandparent class
+class GrandParent {
+public:
+    void method1() {
+        cout << "GrandParent method1" << endl;
+    }
+};
+
+// Parent class inheriting from GrandParent
+class Parent : public GrandParent {
+public:
+    void method2() {
+        cout << "Parent method2" << endl;
+    }
+};
+
+// Child class inheriting from Parent
+class Child : public Parent {
+public:
+    void method3() {
+        cout << "Child method3" << endl;
+    }
+};
+
+int main() {
+    Child child;
+    child.method1();  // Output: GrandParent method1
+    child.method2();  // Output: Parent method2
+    child.method3();  // Output: Child method3
+    
+    return 0;
+}
